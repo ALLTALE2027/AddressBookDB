@@ -24,3 +24,9 @@ update AddressBook set state='Karnataka',city ='Bangalore' where firstName='Dars
 delete from AddressBook where firstName='Peter';
 ------UC6--------------------------------------
 select * from AddressBook where city='Bangalore' or state='Karnataka';
+------UC7--------------------------------------
+insert into AddressBook(firstName,lastName,address,city,state,zip,phone,email) 
+values ('Bruce','Baner','xyz road','Bangalore','Unknown',123478,6523456780,'baner@yahoo.com'),
+('Wade','Wilson','deadpool street','Canada','Karnataka',654321,7723456780,'spiderman@123.com');
+
+select count(*) from AddressBook where city='Bangalore' or state='Karnataka';
