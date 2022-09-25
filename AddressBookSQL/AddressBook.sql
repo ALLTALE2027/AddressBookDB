@@ -18,3 +18,5 @@ select * from AddressBook;
 insert into AddressBook(firstName,lastName,address,city,state,zip,phone,email) 
 values ('Darshan','Deshmukh','abcd chowk','xyx city','Bangalore',123456,9123456780,'abc@gmail.com'),
 ('Peter','Parker','marvel universe','NY','Pune',654321,7723456780,'spiderman@123.com');
+------UC4----------------------------------------
+update AddressBook set state='Karnataka',city ='Bangalore' where firstName='Darshan';
