@@ -30,3 +30,6 @@ values ('Bruce','Baner','xyz road','Bangalore','Unknown',123478,6523456780,'bane
 ('Wade','Wilson','deadpool street','Canada','Karnataka',654321,7723456780,'spiderman@123.com');
 
 select count(*) from AddressBook where city='Bangalore' or state='Karnataka';
+
+-------UC8-------------------------------------
+select * from AddressBook where city='Bangalore' order by firstName;
