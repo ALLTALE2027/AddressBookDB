@@ -22,3 +22,5 @@ values ('Darshan','Deshmukh','abcd chowk','xyx city','Bangalore',123456,91234567
 update AddressBook set state='Karnataka',city ='Bangalore' where firstName='Darshan';
 ------UC5----------------------------------------
 delete from AddressBook where firstName='Peter';
+------UC6--------------------------------------
+select * from AddressBook where city='Bangalore' or state='Karnataka';
