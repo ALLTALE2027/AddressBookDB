@@ -1,7 +1,7 @@
-﻿---------UC1------
+﻿---------UC1---------------------------------
 create database AddressBookService;
 use AddressBookService;
-------UC2---------
+------UC2------------------------------------
 create table AddressBook(
 firstName varchar(20) primary key,
 lastName varchar(20),
@@ -14,3 +14,7 @@ email varchar(30)
 );
 
 select * from AddressBook;
+------UC3-------------------------------------
+insert into AddressBook(firstName,lastName,address,city,state,zip,phone,email) 
+values ('Darshan','Deshmukh','abcd chowk','xyx city','Bangalore',123456,9123456780,'abc@gmail.com'),
+('Peter','Parker','marvel universe','NY','Pune',654321,7723456780,'spiderman@123.com');
